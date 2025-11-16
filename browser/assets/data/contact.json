@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Email",
+    "url": "mailto:nararo.dev@outlook.com",
+    "icon": "bi-solid bi-envelope"
+  },
+  {
+    "id": 2,
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/nelson-araya-rojas/",
+    "icon": "bi-brands bi-linkedin"
+  },
+  {
+    "id": 3,
+    "name": "GitHub",
+    "url": "https://github.com/Neoarayarojas",
+    "icon": "bi-brands bi-github"
+  },
+  {
+    "id": 4,
+    "name": "Youtube",
+    "url": "https://www.youtube.com/@1nf0rmat1ps4",
+    "icon": "bi bi-youtube"
+  }
+]

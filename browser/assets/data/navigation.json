@@ -1,0 +1,24 @@
+[
+  { "id": 1, "name": "Inicio", "url": "", "icon": "bi bi-house-door" },
+  { "id": 2, "name": "Sobre mí", "url": "about-me", "icon": "bi bi-person" },
+  {
+    "id": 3,
+    "name": "Experiencia",
+    "url": "experience",
+    "icon": "bi bi-briefcase"
+  },
+  {
+    "id": 4,
+    "name": "Educación",
+    "url": "education",
+    "icon": "bi bi-mortarboard"
+  },
+  { "id": 5, "name": "Habilidades", "url": "skill", "icon": "bi bi-stack" },
+  {
+    "id": 6,
+    "name": "Proyectos",
+    "url": "project",
+    "icon": "bi bi-collection"
+  },
+  { "id": 7, "name": "Recursos", "url": "resource", "icon": "bi bi-archive" }
+]
