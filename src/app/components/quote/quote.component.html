@@ -1,0 +1,43 @@
+<section id="quotes" class="py-5">
+  <div class="py-5 text-center">
+    <div class="col-lg-6 mx-auto row gap-4 py-3 lead mb-4">
+      <h3 class="fw-bold">Frases famosas</h3>
+      <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          @for(quote of quotes; track quote.id){
+          <div class="carousel-item" [class.active]="quote.id === 1">
+            <div style="margin-inline: 5%">
+              <blockquote>
+                <p class="fst-italic" style="font-size: 22px">
+                  {{ quote.text }}
+                </p>
+                <footer class="mt-2 fst-italic">{{ quote.author }}</footer>
+              </blockquote>
+            </div>
+          </div>
+          }
+        </div>
+        <button
+          class="carousel-control-prev"
+          style="justify-content: flex-start; padding-left: 10px"
+          type="button"
+          data-bs-target="#quotesCarousel"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-chevron-left fs-2"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          style="justify-content: flex-end; padding-right;: 10px"
+          type="button"
+          data-bs-target="#quotesCarousel"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-chevron-right fs-2"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

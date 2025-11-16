@@ -1,0 +1,164 @@
+<section id="timer-cube" class="py-5">
+  <div class="px-4 py-5 text-center">
+    <div class="col-lg-6 mx-auto row gap-4 py-3 lead justify-content-center">
+      <h1 class="fw-bold">Cronómetro para cubo rubik 3x3</h1>
+      <div class="row">
+        <p>
+          Mezcla sugerida
+          <button
+            type="button"
+            class="btn btn-warning col"
+            data-bs-toggle="modal"
+            data-bs-target="#infoScramble"
+            style="border: solid 1px"
+          >
+            <!-- Información -->
+            <i class="bi bi-info-circle"></i>
+          </button>
+        </p>
+      </div>
+      <h4>{{ scramble }}</h4>
+      <span>Al resetear el tiempo, también cambia la mezcla sugerida</span>
+      <p style="font-size: 80px">{{ formatTime(time) }}</p>
+      <div class="container">
+        <div class="row gap-2">
+          <button class="col btn btn-primary" (click)="startTimer()">
+            Iniciar
+          </button>
+          <button class="col btn btn-danger" (click)="stopTimer()">
+            Detener
+          </button>
+          <button class="col btn btn-secondary" (click)="resetTimer()">
+            Reiniciar
+          </button>
+          <span
+            >Se puede iniciar y detener el tiempo con la barra espaciadora,
+            tambien se puede eliminar el tiempo con la tecla backspace</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="infoScramble"
+    tabindex="-1"
+    aria-labelledby="infoScrambleLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="infoScrambleLabel">
+            ¿Cómo funciona la notación?
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <h4>🧩 Notación del Cubo 3x3</h4>
+          <p>
+            La notación de movimientos del cubo Rubik indica qué cara girar y en
+            qué dirección. Cada letra representa una cara del cubo:
+          </p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="#">#</th>
+                <th scope="col">Letra</th>
+                <th scope="col">Cara</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>U</td>
+                <td>Up (arriba)</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>D</td>
+                <td>Down (abajo)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>L</td>
+                <td>Left (izquierda)</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>R</td>
+                <td>Right (derecha)</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>F</td>
+                <td>Front (frontal)</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>B</td>
+                <td>Back (trasera)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Cada movimiento de la tabla puede tener un modificador que indica
+            cómo girar esa cara:
+          </p>
+          <ul>
+            <li>
+              (sin símbolo) → giro horario de 90°. <br />Ejemplo:<br />
+              R = gira la cara derecha hacia la derecha.
+            </li>
+            <br />
+            <li>
+              (apóstrofe) → giro antihorario de 90°. <br />
+              Ejemplo: <br />R' = gira la cara derecha hacia la izquierda.
+            </li>
+            <br />
+            <li>
+              2 → giro doble (180°). <br />
+              Ejemplo:<br />
+              R2 = gira la cara derecha dos veces (da lo mismo el sentido).
+            </li>
+          </ul>
+          <p>🔄 Ejemplo de mezcla (scramble)</p>
+          <ul>
+            <li>R U R' U' F2 L D2 B' R2 U</li>
+          </ul>
+          <p>Esto significa:</p>
+
+          <ul>
+            <li>Gira la cara derecha (R) una vez.</li>
+            <li>Gira la cara superior (U) una vez.</li>
+            <li>Gira la cara derecha en sentido contrario (R').</li>
+            <li>Gira la superior en sentido contrario (U').</li>
+            <li>Gira la frontal dos veces (F2), etc.</li>
+          </ul>
+          <p>
+            👉 Esta notación es la oficial usada en competiciones y programas de
+            cronometraje como CS Timer o Cubing.net.
+          </p>
+          <p>
+            ⭐ Aprenderla te ayudará a entender y reproducir cualquier scramble
+            correctamente.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

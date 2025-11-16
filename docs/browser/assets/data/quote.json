@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "text": "Sí puedes imaginarlo, puedes programarlo.",
+    "author": "Alejandro Taboada",
+    "source": "Programación ATS"
+  },
+  {
+    "id": 2,
+    "text": "El único camino para hacer grandes cosas es hacer lo que amas.",
+    "author": "Steve Jobs"
+  },
+  {
+    "id": 3,
+    "text": "En medio de las dificultades se encuentran las oportunidades.",
+    "author": "Albert Einstein"
+  },
+  {
+    "id": 4,
+    "text": "Programar es como el humor. Cuando lo tienes que explicar, es malo.",
+    "author": "Cory House"
+  }
+]

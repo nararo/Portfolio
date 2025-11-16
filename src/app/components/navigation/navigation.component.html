@@ -1,0 +1,56 @@
+<section>
+  <nav
+    class="navbar navbar-expand-lg fixed-top px-3 z-3"
+    aria-label="Custom navbar"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold nav-link" href="#">Nararo DEV</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarContent"
+      >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          @for(navigation of navigationList; track navigation.id){
+          <li class="navbar-item">
+            <a href="#{{ navigation.url }}" class="nav-link px-2">
+              <!-- <i class="{{ navigation.icon }}"></i>  -->
+              {{ navigation.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <button
+    class="btn position-fixed bottom-0 start-0 m-4 rounded-circle shadow z-3"
+    style="border: 1px"
+    (click)="toggleTheme()"
+    style="width: 3rem; height: 3rem"
+  >
+    <i
+      [class]="currentTheme === 'light-mode' ? 'bi bi-moon' : 'bi bi-sun'"
+      style="font-size: 1.3rem"
+    ></i>
+  </button>
+  <!--
+  <button
+    class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow z-3"
+    (click)="toggleLanguage()"
+    style="width: 3rem; height: 3rem"
+  >
+    {{ currentLanguage === "EN" ? "EN" : "ES" }}
+  </button>
+  -->
+</section>

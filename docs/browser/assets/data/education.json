@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "institution": "Universidad Católica del Maule",
+    "degree": "Ingeniero Civil Informático",
+    "year": "mar 2019 - sep 2024"
+  },
+  {
+    "id": 2,
+    "institution": "Alura Latam",
+    "degree": "Especialización en Desarrollo Web – Back End",
+    "year": "mar 2023 - dic 2023"
+  },
+  {
+    "id": 3,
+    "institution": "University Of Regina",
+    "degree": "Exchange Student: Faculty of Engineering and Applied Science",
+    "year": "ago 2022 - dic 2022"
+  }
+]

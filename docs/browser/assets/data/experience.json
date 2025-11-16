@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "role": "Memorista",
+    "company": "ENGIE Energía Chile",
+    "date": "jun 2024 - ago 2024",
+    "description": "Diseñé, planifiqué y desarrollé la primera versión funcional de GuardianLink, un sistema integral de monitoreo con inteligencia artificial generativa, orientado a optimizar los servicios de comunicación interna.",
+    "tecnologies": [
+      "Python",
+      "SQL Server 2022",
+      ".NET",
+      "Open AI",
+      "GIT",
+      "Azure",
+      "Syncfusion"
+    ]
+  },
+  {
+    "id": 2,
+    "role": "Práctica Profesional",
+    "company": "ENGIE Energía Chile",
+    "date": "ene 2024 - mar 2024",
+    "description": "Desarrollé un proyecto de estandarización para prácticas de desarrollo web en el área, contribuyendo a mejorar la mantenibilidad del código y los flujos de trabajo del equipo.",
+    "tecnologies": ["SQL Server 2022", ".NET", "GIT", "Azure", "Syncfusion"]
+  },
+  {
+    "id": 3,
+    "role": "Beca laboral: Laboratorio de Hardware",
+    "company": "Universidad Católica del Maule",
+    "date": "mar 2022 - ago 2022",
+    "description": "Contribuí al desarrollo y análisis técnico de sistemas y dispositivos innovadores, apoyando proyectos experimentales que facilitaron la investigación interdisciplinaria.",
+    "tecnologies": ["Python", "Excel"]
+  },
+  {
+    "id": 4,
+    "role": "Coordinador ENTP",
+    "company": "Universidad Católica del Maule",
+    "date": "nov 2020 - dic 2020",
+    "description": "Coordinador del Encuentro Nacional de Tutores Pares 2020, responsable de la planificación y ejecución del evento.",
+    "tecnologies": ["Excel", "Teams"]
+  },
+  {
+    "id": 5,
+    "role": "Tutor par",
+    "company": "Universidad Católica del Maule",
+    "date": "may 2025 - ago 2025",
+    "description": "Tutor par de estudiantes de primer año, facilitando su integración académica y universitaria.",
+    "tecnologies": ["Python", "Teams", "C", "Suit Office"]
+  }
+]

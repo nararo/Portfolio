@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "category": "Front-end",
+    "skills": ["Angular", "JavaScript", "HTML", "CSS", "Bootstrap"]
+  },
+  {
+    "id": 2,
+    "category": "Back-end",
+    "skills": ["Node.js", "Express", "NestJS"]
+  },
+  {
+    "id": 3,
+    "category": "Databases",
+    "skills": ["SQL Server", "MySQL", "MongoDB", "PostgreSQL", "Graph"]
+  },
+  {
+    "id": 4,
+    "category": "Lenguajes",
+    "skills": ["Python", "C", "C++", "JavaScript", "TypeScript"]
+  },
+  {
+    "id": 5,
+    "category": "Herramientas complementarias",
+    "skills": ["Azure", "Git", "Docker", "Postman"]
+  }
+]

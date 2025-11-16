@@ -1,0 +1,11 @@
+<section id="contact">
+  <div class="px-4 my-3 text-center">
+    <p style="font-size: 30px">
+      @for(contact of contacts; track contact.id) {
+      <a class="text-body-emphasis" [href]="contact.url">
+        <i class="{{ contact.icon }} px-2" [attr.title]="contact.name"></i
+      ></a>
+      }
+    </p>
+  </div>
+</section>

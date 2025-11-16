@@ -1,0 +1,24 @@
+<section id="experience" class="py-5">
+  <div class="px-4 py-5 text-center">
+    <div class="col-lg-6 mx-auto row gap-4 py-3 lead mb-4">
+      <h3 class="text-start fw-bold">
+        <i class="bi bi-briefcase"></i> Experiencia laboral
+      </h3>
+      @for(experience of experienceList; track experience.id){
+      <div class="card shadow-sm text-start">
+        <div class="card-body">
+          <h5 class="card-title">{{ experience.role }}</h5>
+          <p class="card-text">{{ experience.company }}</p>
+          <p class="card-text">{{ experience.date }}</p>
+          <p class="card-text">{{ experience.description }}</p>
+          <div class="d-flex flex-wrap gap-2">
+            @for (tecnology of experience.tecnologies; track tecnology) {
+            <span class="badge border">{{ tecnology }}</span>
+            }
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
